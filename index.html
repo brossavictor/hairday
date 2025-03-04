@@ -23,23 +23,23 @@
 
       <form class="form">
         <header>
-          <h1>Agende um atendimento</h1>
+          <h1>Schedule an appointment</h1>
           <p>
-            Selecione data, horário e informe o nome do cliente para criar o
-            agendamento
+            Select the date and write the customer name to create an
+            appointment.
           </p>
         </header>
 
-        <label for="date" class="label">Data</label>
+        <label for="date" class="label">Date</label>
         <div class="input">
           <i><img src="./src/assets/calendar.svg" alt="Calendário" /></i>
           <input type="date" id="date" name="date" required />
         </div>
 
-        <span class="label">Horários</span>
+        <span class="label">Timetable</span>
         <ul id="hours" class="hours" aria-label="Horários disponíveis de manhã">
           <!-- Exemplo: Manhã -->
-          <li data-period="morning" class="hour-period">Manhã</li>
+          <li data-period="morning" class="hour-period">Morning</li>
           <li data-period="morning" value="09:00" class="hour hour-available">
             09:00
           </li>
@@ -53,7 +53,7 @@
             12:00
           </li>
           <!-- Exemplo: Tarde  -->
-          <li data-period="morning" class="hour-period">Tarde</li>
+          <li data-period="morning" class="hour-period">Afternoon</li>
           <li
             data-period="afternoon"
             value="13:00"
@@ -89,7 +89,7 @@
             18:00
           </li>
           <!-- Exemplo: Noite -->
-          <li data-period="morning" class="hour-period">Noite</li>
+          <li data-period="morning" class="hour-period">Night</li>
 
           <li data-period="night" value="19:00" class="hour hour-available">
             19:00
@@ -102,7 +102,7 @@
           </li>
         </ul>
 
-        <label for="client" class="label">Cliente</label>
+        <label for="client" class="label">Customer</label>
         <div class="input">
           <i><img src="./src/assets/person.svg" alt="Calendário" /></i>
           <input
@@ -114,29 +114,29 @@
           />
         </div>
 
-        <button type="submit" class="button">Agendar</button>
+        <button type="submit" class="button">Schedule</button>
       </form>
 
       <aside class="schedule">
         <header>
-          <h1>Agendamentos</h1>
-          <p>Visualize os agendamentos de acordo com o dia selecionado</p>
+          <h1>Schedule<s/h1>
+          <p>Visualize the schedule of the day you have selected.</p>
         </header>
 
         <section class="schedule-period">
           <header>
             <img src="./src/assets/morning.svg" alt="Manhã" />
-            <strong>Manhã</strong>
+            <strong>Morning</strong>
             <span>09h-12h</span>
           </header>
           <ul id="period-morning" class="period">
             <!-- Exemplo  -->
             <li>
               <strong>11:00</strong>
-              <span>Rodrigo Gonçalves</span>
+              <span>John Doe</span>
               <img
                 src="./src/assets/cancel.svg"
-                alt="Cancelar"
+                alt="cancel"
                 class="cancel-icon"
               />
             </li>
@@ -146,17 +146,17 @@
         <section class="schedule-period">
           <header>
             <img src="./src/assets/afternoon.svg" alt="Tarde" />
-            <strong>Tarde</strong>
+            <strong>Afternoon</strong>
             <span>13h-18h</span>
           </header>
           <ul id="period-afternoon" class="period">
             <!-- Exemplo -->
             <li>
               <strong>14:00</strong>
-              <span>Rodrigo Gonçalves</span>
+              <span>John Doe</span>
               <img
                 src="./src/assets/cancel.svg"
-                alt="Cancelar"
+                alt="cancel"
                 class="cancel-icon"
               />
             </li>
@@ -166,17 +166,17 @@
         <section class="schedule-period">
           <header>
             <img src="./src/assets/night.svg" alt="noite" />
-            <strong>noite</strong>
+            <strong>Night</strong>
             <span>19h-21h</span>
           </header>
           <ul id="period-night" class="period">
             <!-- Exemplo -->
             <li>
               <strong>19:00</strong>
-              <span>Rodrigo Gonçalves</span>
+              <span>John Doe</span>
               <img
                 src="./src/assets/cancel.svg"
-                alt="Cancelar"
+                alt="cancel"
                 class="cancel-icon"
               />
             </li>

@@ -1,5 +1,6 @@
 import dayjs from "dayjs";
 import { openingHours } from "../../utils/opening-hours";
+import { hoursClick } from "./hours-click";
 
 const hours = document.getElementById("hours");
 
@@ -33,6 +34,8 @@ export function hoursLoad({ date }) {
 
     hours.append(li);
   });
+
+  hoursClick();
 
   function hourHeaderAdd(title) {
     const header = document.createElement("li");

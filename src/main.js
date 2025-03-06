@@ -8,4 +8,3 @@ import "./styles/schedule.css";
 
 import "./modules/form/submit.js";
 import "./modules/page-load.js";
-import "./modules/input-refresh.js";

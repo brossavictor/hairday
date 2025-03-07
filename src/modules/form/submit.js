@@ -1,5 +1,5 @@
 import dayjs from "dayjs";
-import { scheduleNew } from "../services/schedule-new";
+import { scheduleNew } from "../../services/schedule-new.js";
 
 const form = document.querySelector("form");
 const customer = document.getElementById("customer");

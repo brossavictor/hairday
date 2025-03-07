@@ -1,7 +1,5 @@
-import { inputRefresh } from "./input-refresh";
-import { scheduleDay } from "./schedules/load";
+import { scheduleDay } from "./schedules/load.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   scheduleDay();
-  inputRefresh();
 });

@@ -21,7 +21,7 @@ export function schedulesNow({ dailySchedules }) {
       name.textContent = schedule.name;
 
       const cancelIcon = document.createElement("img");
-      cancelIcon.classList.add("cance-icon");
+      cancelIcon.classList.add("cancel-icon");
       cancelIcon.setAttribute("src", "src/assets/cancel.svg");
       cancelIcon.setAttribute("alt", "cancel schedule");
 
@@ -31,7 +31,7 @@ export function schedulesNow({ dailySchedules }) {
 
       if (hour <= 12) {
         periodMorning.appendChild(item);
-      } else if (hour > 12 && hour <= 18) {
+      } else if (hour > 12 && hour < 18) {
         periodAfternoon.appendChild(item);
       } else {
         periodNight.appendChild(item);

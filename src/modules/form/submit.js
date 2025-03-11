@@ -41,6 +41,6 @@ form.onsubmit = async (event) => {
     customer.value = "";
   } catch (error) {
     alert("Something went wrong.");
-    console.log(JSON.stringify(error));
+    console.log(error);
   }
 };
